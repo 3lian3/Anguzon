@@ -1,22 +1,35 @@
-<div class="d-flex row mb-2">
-	<div class="col-md-6">
-		<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-			 <div class="d-flex flex-column justify-content-between align-items-center w-50">
-				<img src="/assets/images/Angular_full_color_logo.svg.png" class="my-3" alt="">
-			</div>
-			<div class="d-flex flex-column p-4 position-static w-50">
-				<div class="my-2">
-					<h3 class="mb-0">T-shirt Anguzon</h3>
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="d-flex flex-column justify-content-between align-items-center w-50">
+					<img src="{{product?.imageUrl}}" class="my-3" alt="">
 				</div>
-				<p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate officia sint. Doloribus, quasi laborum debitis cum fuga aspernatur vero?</p>
-				<div class="my-2">
-					<h4>Prix: 20.0€</h4>
+				<div class="d-flex flex-column p-4 position-static w-50">
+					<div class="my-2">
+						<h5 class="mb-0">{{ product?.name }}</h5>
+					</div>
+					<div class="row" *ngIf="product && product.size">
+						<div class="col-md-4">
+							<label for="inputState" class="form-label">Taille</label>
+						</div>
+						<div class="col">
+							<select id="inputState" class="form-select">
+								<option selected>Choisir la taille</option>
+								<option *ngFor="let size of product.size">{{size}}</option>
+							</select>
+						</div>
+					</div>
+					<div class="row ">
+						<h4>{{ (product?.price || 0)/100 }}0€</h4>
+						<button class="btn btn-primary justify-content-center">ajouter au panier<i class="fi fi-rr-shopping-bag m-3" ></i></button>
+					</div>
 				</div>
-
 			</div>
-
 		</div>
 	</div>
 </div>
+
+
 
 

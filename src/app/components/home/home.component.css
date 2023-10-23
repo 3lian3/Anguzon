@@ -1,0 +1,15 @@
+.homePage {
+  margin-top: 50px;
+}
+
+.carousel-item {
+  height:95vh;  /* Hauteur ajustable selon vos besoins */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.aboutCarousel {
+  color: black;
+  
+}

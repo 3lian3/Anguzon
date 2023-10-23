@@ -1,13 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#" ><img src="../../../assets/images/logoAnguzon.png" alt="logo Anguzon"></a>
+    <div class="collapse navbar-collapse">
+      <a class="navbar-brand" routerLink="home" ><img src="../../../assets/images/logoAnguzon.png" alt="logo Anguzon"></a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Tous les articles
+          <a class="nav-link active" aria-current="page" routerLink="list-product">Tous les articles
           </a>
         </li>
         <li class="nav-item">
@@ -17,7 +14,7 @@
           <a class="nav-link " href="#">Sweats</a>
         </li>
       </ul>
-        <a href="/panier" class="cart-icon mx-5">
+        <a routerLink="cart" class="cart-icon mx-5">
           <i class="fi fi-rs-basket-shopping-simple"></i>
            <div class="quantite-badge" style="position: absolute; top: 0; right: 0;">5</div>
         </a>
