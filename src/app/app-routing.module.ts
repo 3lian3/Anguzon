@@ -4,10 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ListProductComponent } from './components/list-product/list-product.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductComponent } from './components/product/product.component';
 
 export const routes: Routes = [
-  { path: "home", component: HomeComponent, pathMatch: "full"},
+  { path: "home", component: HomeComponent, pathMatch: "full" },
+  { path: "product/:id", component: ProductComponent, pathMatch: "full"},
   { path: "list-product", component: ListProductComponent, pathMatch: "full" },
+  { path: "product-detail", component: ProductDetailComponent, pathMatch: "full"},
   { path: "cart", component: CartComponent, pathMatch: "full" },
   { path: "**", component: NotFoundComponent, pathMatch: "full" }
 ];

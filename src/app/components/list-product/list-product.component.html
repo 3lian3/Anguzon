@@ -1,5 +1,14 @@
 <div class="list-product">
-
-<app-product-item *ngFor="let product of products" [product]="product"></app-product-item>
-
+<app-product-item
+*ngFor="let product of products"
+[product]="product"
+(deleteProductItem)="handleDeleteProduct($event)"
+(displayProductView)="handleDisplayProductView($event)"
+>
+</app-product-item>
+<app-modal-product [product]="selectedProduct"></app-modal-product>
+<h2 class="emptyPage" *ngIf="!products.length">
+Aucun article n'est disponible sur cette page
+</h2>
+<app-modal-product *ngIf="isDisplayProductView"></app-modal-product>
 </div>

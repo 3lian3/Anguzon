@@ -1,5 +1,9 @@
 img {
-  width: 200px;
-  height: 200px;
+  width: 415px;
+  height: 400px;
 }
 
+.card-body:hover{
+  background-color: rgb(237, 235, 235);
+}
+ 

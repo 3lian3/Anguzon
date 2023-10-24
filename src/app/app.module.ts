@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,10 @@ import { ProductComponent } from './components/product/product.component';
 import { ContainerComponent } from './components/container/container.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { Router, RouterModule } from '@angular/router';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ModalProductComponent } from './components/modal-product/modal-product.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -27,12 +32,16 @@ import { Router, RouterModule } from '@angular/router';
     ProductComponent,
     ContainerComponent,
     ProductItemComponent,
+    ProductDetailComponent,
+    ModalProductComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    RouterModule.forRoot(routes)
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+    TooltipModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

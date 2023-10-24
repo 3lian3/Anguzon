@@ -1,35 +1,14 @@
-<div class="container">
-	<div class="row">
-		<div class="col-6">
-			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-				<div class="d-flex flex-column justify-content-between align-items-center w-50">
-					<img src="{{product?.imageUrl}}" class="my-3" alt="">
-				</div>
-				<div class="d-flex flex-column p-4 position-static w-50">
-					<div class="my-2">
-						<h5 class="mb-0">{{ product?.name }}</h5>
-					</div>
-					<div class="row" *ngIf="product && product.size">
-						<div class="col-md-4">
-							<label for="inputState" class="form-label">Taille</label>
-						</div>
-						<div class="col">
-							<select id="inputState" class="form-select">
-								<option selected>Choisir la taille</option>
-								<option *ngFor="let size of product.size">{{size}}</option>
-							</select>
-						</div>
-					</div>
-					<div class="row ">
-						<h4>{{ (product?.price || 0)/100 }}0€</h4>
-						<button class="btn btn-primary justify-content-center">ajouter au panier<i class="fi fi-rr-shopping-bag m-3" ></i></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="container" (click)="handleClickProduct(product)" data-bs-toggle="modal" [attr.data-bs-target]="product ? '#modal' + product.id : null">
+  <div class="row pt-2 ">
+    <div class="col-dm-4">
+      <div class="card mb-3">
+        <img [src]="product ? product.imageUrl[0] : ''" class="card-img-top" [alt]="product?.name">
+        <div class="card-body">
+          <p class="card-title">{{ product?.name}}</p>
+          <p>categorie : {{product?.category}}</p>
+          <h4 class="text-end">{{ (product?.price || 0 ) | currency :'EUR':'symbol':'1.2-2' }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
-
