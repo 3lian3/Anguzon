@@ -4,8 +4,8 @@
     "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
     "imageUrl": [
       "/assets/images/t-shirt-jjsu2.webp",
-      "/assets/images/t-shirt-jjsu2.webp",
-      "/assets/images/t-shirt-jjsu2.webp"
+      "/assets/images/t-shirt-jj3.webp",
+      "/assets/images/t-shirt-jj4.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -18,8 +18,8 @@
     "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
     "imageUrl": [
       "/assets/images/t-shirt-jj3.webp",
-      "/assets/images/t-shirt-jj3.webp",
-      "/assets/images/t-shirt-jj3.webp"
+      "/assets/images/t-shirt-jjsu2.webp",
+      "/assets/images/t-shirt-jj4.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -32,8 +32,8 @@
     "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
     "imageUrl": [
       "/assets/images/t-shirt-jj4.webp",
-      "/assets/images/t-shirt-jj4.webp",
-      "/assets/images/t-shirt-jj4.webp"
+      "/assets/images/t-shirt-jjsu2.webp",
+      "/assets/images/t-shirt-jj3.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -46,8 +46,8 @@
     "name": "T-SHIRT GRAPHIQUE UT L'ATTAQUE DES TITANS",
     "imageUrl": [
       "/assets/images/t-shirt-attackT.webp",
-      "/assets/images/t-shirt-attackT.webp",
-      "/assets/images/t-shirt-attackT.webp"
+      "/assets/images/t-shirt-attackT2.webp",
+      "/assets/images/t-shirt-my-Hero-Ac.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -60,8 +60,8 @@
     "name": "T-SHIRT GRAPHIQUE UT L'ATTAQUE DES TITANS",
     "imageUrl": [
       "/assets/images/t-shirt-attackT2.webp",
-      "/assets/images/t-shirt-attackT2.webp",
-      "/assets/images/t-shirt-attackT2.webp"
+      "/assets/images/t-shirt-attackT.webp",
+      "/assets/images/t-shirt-my-hero2.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -74,8 +74,8 @@
     "name": "T-SHIRT GRAPHIQUE UT MY HERO ACADEMIA",
     "imageUrl": [
       "/assets/images/t-shirt-my-Hero-Ac.webp",
-      "/assets/images/t-shirt-my-Hero-Ac.webp",
-      "/assets/images/t-shirt-my-Hero-Ac.webp"
+      "/assets/images/t-shirt-sake.webp",
+      "/assets/images/t-shirt-my-hero2.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -88,8 +88,8 @@
     "name": "T-SHIRT GRAPHIQUE UT MY HERO ACADEMIA",
     "imageUrl": [
       "/assets/images/t-shirt-my-hero2.webp",
-      "/assets/images/t-shirt-my-hero2.webp",
-      "/assets/images/t-shirt-my-hero2.webp"
+      "/assets/images/t-shirt-sake.webp",
+      "/assets/images/t-shirt-my-Hero-Ac.webp"
     ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -102,8 +102,8 @@
     "name": "T-SHIRT GRAPHIQUE UT THE SAKE COLLECTION",
     "imageUrl":[
        "/assets/images/t-shirt-sake.webp",
-       "/assets/images/t-shirt-sake.webp",
-       "/assets/images/t-shirt-sake.webp"
+       "/assets/images/t-shirt-my-hero2.webp",
+       "/assets/images/t-shirt-my-Hero-Ac.webp"
       ],
     "category": "t-shirt",
     "size": ["S", "M", "L", "XL"],
@@ -221,6 +221,34 @@
   "size": ["S", "M", "L", "XL"],
   "price": 69.90,
   "slug": "sweat-dragon-ball-z-goku-black-apparition",
+  "description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
+  },
+  {
+  "id": 17,
+  "name": "CASQUETTE NEW YORK YANKEES",
+  "imageUrl":[
+    "/assets/images/casquette-NY.webp",
+    "/assets/images/casquette-NY2.webp",
+    "/assets/images/casquette-NY3.webp"
+  ],
+  "category": "accessoire",
+  "size": ["S", "M", "L", "XL"],
+  "price": 69.90,
+  "slug": "casquette-new-york-yankees",
+  "description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
+  },
+  {
+  "id": 18,
+  "name": "GANTS NIKE PERFORMANCE",
+  "imageUrl":[
+    "/assets/images/gants-Nike.webp",
+    "/assets/images/gants-nike2.webp",
+    "/assets/images/gants-nike3.webp"
+  ],
+  "category": "accessoire",
+  "size": ["S", "M", "L", "XL"],
+  "price": 69.90,
+  "slug": "gants-nike-performance",
   "description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
   }
 

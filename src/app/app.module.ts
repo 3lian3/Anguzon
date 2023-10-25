@@ -20,6 +20,11 @@ import { ModalProductComponent } from './components/modal-product/modal-product.
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { LoaderComponent } from './components/loader/loader.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { ProductDescriptionComponent } from './components/productInfo/product-description/product-description.component';
+import { ProductCompositionComponent } from './components/productInfo/product-composition/product-composition.component';
+import { ManufacturingComponent } from './components/productInfo/manufacturing/manufacturing.component';
+import { ProductTabsDescriptionComponent } from './components/productInfo/product-tabs-description/product-tabs-description.component';
 
 
 @NgModule({
@@ -38,6 +43,11 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     ModalProductComponent,
     LoaderComponent,
     BreadcrumbComponent,
+    PaymentComponent,
+    ProductDescriptionComponent,
+    ProductCompositionComponent,
+    ManufacturingComponent,
+    ProductTabsDescriptionComponent,
   ],
   imports: [
     BrowserModule,

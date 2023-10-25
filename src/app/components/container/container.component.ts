@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ContainerComponent {
 
+  constructor() { }
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

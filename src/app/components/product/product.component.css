@@ -1,5 +1,9 @@
-.container text-center {
-  margin-top: 300px;
+.container {
+  margin-top: 30px;
 }
 
+.imageMiniature {
+  cursor: pointer;
+  border: solid 1px #212038;
+}
 

@@ -1,12 +1,12 @@
-<div class="container text-center">
+<div class="container">
   <div class="row">
     <div class="col flex-column align-items-start">
-      <img *ngFor="let url of product?.imageUrl" [src]="url" class=" mt-3 my-1" [alt]="product?.name" width="100px" height="100px">
+      <img *ngFor="let url of product?.imageUrl" [src]="url" class="imageMiniature mt-3" [alt]="product?.name" width="100px" height="100px" (click)="handleChangeImage(url)" [ngClass]="{imageMiniature: imageMin == url }">
     </div>
     <div class="col-10">
       <div class="row">
         <div class="col-6 d-flex">
-          <img [src]="product ? product.imageUrl[0] : ''" class="my-3 " alt="{{product?.name}}" width="400px" height="400px">
+          <img [src]="this.imageMin" class="my-3 " alt="{{product?.name}}" width="400px" height="400px">
         </div>
         <div class="col-4 my-3">
         <div class="my-3 test-start">
@@ -53,6 +53,7 @@
 		</div>
 	</div>
 </div>
+<app-product-description></app-product-description>
 
 
 

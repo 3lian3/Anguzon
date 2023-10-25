@@ -9,9 +9,10 @@ import { Subscription } from 'rxjs';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit, OnDestroy{
+export class ProductComponent implements OnInit, OnDestroy {
 
   slug: string | undefined;
+  imageMin: string | undefined;
   product: Product | undefined;
   productSubscription: Subscription | undefined;
 
@@ -28,17 +29,22 @@ export class ProductComponent implements OnInit, OnDestroy{
       .subscribe({
         next: (products: Product[]) => {
           this.product = products.filter(p => p.slug === this.slug)[0];
+          this.imageMin = this.product.imageUrl[0];
         },
         error: (error: any) => {
           console.log("Error: ", error);
         }
-    })
+      })
     // console.log(this.slug);
   }
 
   ngOnDestroy(): void {
-    if(this.productSubscription){
+    if (this.productSubscription) {
       this.productSubscription.unsubscribe();
     }
+  }
+
+  handleChangeImage(url: string): void {
+    this.imageMin = url;
   }
 }
