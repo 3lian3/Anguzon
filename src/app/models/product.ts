@@ -6,7 +6,7 @@ export interface Product {
   size: string[];
   price: number;
   description: string;
-  slug: string;
+  slug?: string;
 }
 
 

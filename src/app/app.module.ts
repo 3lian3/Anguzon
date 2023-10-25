@@ -18,6 +18,8 @@ import { Router, RouterModule } from '@angular/router';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ModalProductComponent } from './components/modal-product/modal-product.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { LoaderComponent } from './components/loader/loader.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     ProductItemComponent,
     ProductDetailComponent,
     ModalProductComponent,
+    LoaderComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,

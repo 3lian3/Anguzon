@@ -1,8 +1,13 @@
-<div class="container" (click)="handleClickProduct(product)" data-bs-toggle="modal" [attr.data-bs-target]="product ? '#modal' + product.id : null">
+<a [routerLink] = "['product', product?.slug]">
+<div class="container" (click)="handleClickProduct(product)" >
   <div class="row pt-2 ">
     <div class="col-dm-4">
       <div class="card mb-3">
+      
+      <div class="fex-1 ">
         <img [src]="product ? product.imageUrl[0] : ''" class="card-img-top" [alt]="product?.name">
+
+      </div>
         <div class="card-body">
           <p class="card-title">{{ product?.name}}</p>
           <p>categorie : {{product?.category}}</p>
@@ -12,3 +17,5 @@
     </div>
   </div>
 </div>
+</a>
+

@@ -9,7 +9,8 @@ import { ProductComponent } from './components/product/product.component';
 
 export const routes: Routes = [
   { path: "home", component: HomeComponent, pathMatch: "full" },
-  { path: "product/:id", component: ProductComponent, pathMatch: "full"},
+  { path: "list-product/product/:slug", component: ProductComponent, pathMatch: "full" },
+  { path: "list-product/category/:category", component: ListProductComponent, pathMatch: "full"},
   { path: "list-product", component: ListProductComponent, pathMatch: "full" },
   { path: "product-detail", component: ProductDetailComponent, pathMatch: "full"},
   { path: "cart", component: CartComponent, pathMatch: "full" },

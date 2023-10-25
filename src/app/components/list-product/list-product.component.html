@@ -8,6 +8,9 @@
 </app-product-item>
 <app-modal-product [product]="selectedProduct"></app-modal-product>
 <h2 class="emptyPage" *ngIf="!products.length">
+<div class="nofound text-center">
+404
+</div>
 Aucun article n'est disponible sur cette page
 </h2>
 <app-modal-product *ngIf="isDisplayProductView"></app-modal-product>

@@ -11,7 +11,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-21",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "C'est l'histoire du p’tit dej, tu la connais ? Pas de bol."
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-22",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "C'est l'histoire d'une blague vaseuse Mets tes bottes."
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-23",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Que demande un footballeur à son coiffeur ? La coupe du monde s’il vous plait."
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-lattaque-des-titans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "C'est l'histoire d'un pingouin qui respire par les fesses Un jour, il s’assoit et il meurt."
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-lattaque-des-titans2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Pourquoi les Belges viennent-ils à la messe avec du savon ? Pour l’Ave Maria."
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-my-hero-academia",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Comment s'appelle le cul de la Schtroumpfette ? Le Blu-ray."
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-my-hero-academia2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "C'est quoi une chauve-souris avec une perruque ? Une souris."
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 19.90,
     "slug": "t-shirt-graphique-ut-the-sake-collection",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Que dit un escargot quand il croise une limace ? Oh un naturiste."
   },
   {
     "id": 9,
@@ -123,7 +123,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 59.90,
     "slug": "sweat-dragon-ball-z-kanji-kame",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Pourquoi les canards sont toujours à l'heure ? Parce qu’ils sont dans l’étang."
   },
   {
     "id": 10,
@@ -137,7 +137,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 59.90,
     "slug": "sweat-dragon-ball-ecole-de-la-tortue",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Qu'est-ce qui est dur, blanc, avec le bout rouge, et qui sent la pisse ? Une borne kilométrique."
   },
   {
     "id": 11,
@@ -151,7 +151,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 59.90,
     "slug": "sweat-dragon-ball-z-vegeta-adidas",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Que fait un crocodile quand il rencontre une superbe femelle ? Il Lacoste."
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 69.90,
     "slug": "sweat-dragon-ball-z-nike-just-do-it",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "C'est quoi un petit pois avec une épée face à une carotte avec une épée ? Un bon duel."
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 69.90,
     "slug": "sweat-dragon-ball-z-goku-baton-magique",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Quel est le point commun entre les maths et le sexe ? Plus il y a d’inconnues, plus c’est chaud."
   },
   {
     "id": 14,
@@ -193,7 +193,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 69.90,
     "slug": "sweat-dragon-ball-z-tortue-geniale",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Pourquoi les pêcheurs ne sont pas gros ? Parce qu’ils surveillent leur ligne."
   },
   {
     "id": 15,
@@ -207,7 +207,7 @@
     "size": ["S", "M", "L", "XL"],
     "price": 59.90,
     "slug": "sweat-dragon-ball-goku-chichi",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+    "description": "Tu connais la blague de la chaise. Elle est tellement longue."
   },
   {
   "id": 16,
@@ -221,7 +221,7 @@
   "size": ["S", "M", "L", "XL"],
   "price": 69.90,
   "slug": "sweat-dragon-ball-z-goku-black-apparition",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero nesciunt, culpa facilis rem quo? Omnis rerum sequi labore repellat."
+  "description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
   }
 
 ]

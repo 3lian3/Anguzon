@@ -1,6 +1,3 @@
-.homePage {
-  margin-top: 50px;
-}
 
 .carousel-item {
   height:95vh;  /* Hauteur ajustable selon vos besoins */
@@ -11,5 +8,5 @@
 
 .aboutCarousel {
   color: black;
-  
+
 }
