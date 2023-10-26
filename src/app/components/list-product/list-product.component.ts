@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
+
 @Component({
   selector: 'app-list-product',
   templateUrl: './list-product.component.html',
@@ -15,7 +16,9 @@ export class ListProductComponent implements OnInit, OnDestroy {
   selectedProduct: Product | undefined;
   productsSubscription: Subscription | undefined;
 
-  constructor(private productService: ProductService) { }
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
     this.productsSubscription = this.productService.getProducts()
@@ -26,7 +29,7 @@ export class ListProductComponent implements OnInit, OnDestroy {
         error: (error: any) => {
           console.log('Error');
         },
-        complete: () => { 
+        complete: () => {
           console.log('Complete');
         },
       });

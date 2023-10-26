@@ -25,6 +25,8 @@ import { ProductDescriptionComponent } from './components/productInfo/product-de
 import { ProductCompositionComponent } from './components/productInfo/product-composition/product-composition.component';
 import { ManufacturingComponent } from './components/productInfo/manufacturing/manufacturing.component';
 import { ProductTabsDescriptionComponent } from './components/productInfo/product-tabs-description/product-tabs-description.component';
+import { CategoryComponent } from './components/category/category.component';
+import { FormatImageUrlPipe } from './pipes/format-image-url.pipe';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { ProductTabsDescriptionComponent } from './components/productInfo/produc
     ProductCompositionComponent,
     ManufacturingComponent,
     ProductTabsDescriptionComponent,
+    CategoryComponent,
+    FormatImageUrlPipe,
   ],
   imports: [
     BrowserModule,

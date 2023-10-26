@@ -3,10 +3,8 @@
   <div class="row pt-2 ">
     <div class="col-dm-4">
       <div class="card mb-3">
-      
       <div class="fex-1 ">
-        <img [src]="product ? product.imageUrl[0] : ''" class="card-img-top" [alt]="product?.name">
-
+        <img [src]="product?.imageUrl | formatImageUrl " class="card-img-top" [alt]="product?.name">
       </div>
         <div class="card-body">
           <p class="card-title">{{ product?.name}}</p>

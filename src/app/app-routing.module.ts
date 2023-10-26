@@ -11,7 +11,7 @@ import { ManufacturingComponent } from './components/productInfo/manufacturing/m
 import { ProductTabsDescriptionComponent } from './components/productInfo/product-tabs-description/product-tabs-description.component';
 
 export const routes: Routes = [
-  { path: "home", component: HomeComponent, pathMatch: "full" },
+  { path: "", component: HomeComponent, pathMatch: "full" },
   {
     path: "list-product/product/:slug",
     component: ProductComponent,
@@ -36,11 +36,12 @@ export const routes: Routes = [
       }
     ]
   },
+  { path: "categoey/:category", component: ListProductComponent, pathMatch: "full"},
   { path: "list-product/category/:category", component: ListProductComponent, pathMatch: "full"},
   { path: "list-product", component: ListProductComponent, pathMatch: "full" },
   { path: "product-detail", component: ProductDetailComponent, pathMatch: "full"},
   { path: "cart", component: CartComponent, pathMatch: "full" },
-  { path: "**", component: NotFoundComponent, pathMatch: "full" }
+  { path: "**", component: NotFoundComponent}
 ];
 
 @NgModule({
