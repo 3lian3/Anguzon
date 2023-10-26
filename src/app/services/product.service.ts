@@ -13,7 +13,24 @@ export class ProductService {
   private products: Product[] = [];
   private api: string = 'http://localhost:4200/assets/api/products.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.loadProducts();
+  }
+
+  private loadProducts(): void {
+
+    this.http.get<any[]>(this.api).subscribe(data => {
+      this.products = data;
+    });
+  }
+
+  public searchByCategory(category: string): Observable<Product[]> {
+    return new Observable(observer => {
+      const filtered = this.products.filter(product => product.category === category);
+      observer.next(filtered);
+      observer.complete();
+    });
+  }
 
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.api);

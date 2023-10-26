@@ -9,6 +9,7 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductCompositionComponent } from './components/productInfo/product-composition/product-composition.component';
 import { ManufacturingComponent } from './components/productInfo/manufacturing/manufacturing.component';
 import { ProductTabsDescriptionComponent } from './components/productInfo/product-tabs-description/product-tabs-description.component';
+import { CategoryComponent } from './components/category/category.component';
 
 export const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },
@@ -36,7 +37,7 @@ export const routes: Routes = [
       }
     ]
   },
-  { path: "categoey/:category", component: ListProductComponent, pathMatch: "full"},
+  { path: "category/:category", component: CategoryComponent, pathMatch: "full"},
   { path: "list-product/category/:category", component: ListProductComponent, pathMatch: "full"},
   { path: "list-product", component: ListProductComponent, pathMatch: "full" },
   { path: "product-detail", component: ProductDetailComponent, pathMatch: "full"},
