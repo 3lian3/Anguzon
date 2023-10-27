@@ -17,6 +17,7 @@ export class CategoryComponent implements OnInit{
   ngOnInit(): void {
 
     this.route.paramMap.subscribe(params => {
+
       const category = params.get('category');
       if (category) {
         this.productService.searchByCategory(category).subscribe(data => {

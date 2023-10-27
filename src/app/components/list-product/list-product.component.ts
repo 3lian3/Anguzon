@@ -15,6 +15,7 @@ export class ListProductComponent implements OnInit, OnDestroy {
   isDisplayProductView: boolean = false;
   selectedProduct: Product | undefined;
   productsSubscription: Subscription | undefined;
+  isLoading: boolean = true;
 
   constructor(
     private productService: ProductService
@@ -25,9 +26,11 @@ export class ListProductComponent implements OnInit, OnDestroy {
       .subscribe({
         next: (products: Product[]) => {
           this.products = products;
+          this.isLoading = false;
         },
         error: (error: any) => {
           console.log('Error');
+          this.isLoading = true;
         },
         complete: () => {
           console.log('Complete');

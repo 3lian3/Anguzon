@@ -1,4 +1,5 @@
-<div class="container">
+<app-loader  *ngIf="isLoading"></app-loader>
+<div *ngIf="!isLoading" class="container">
   <div class="row">
     <div class="col flex-column align-items-start">
       <img *ngFor="let url of product?.imageUrl" [src]="url" class="imageMiniature mt-3" [alt]="product?.name" width="100px" height="100px" (click)="handleChangeImage(url)" [ngClass]="{imageMiniature: imageMin == url }">
@@ -41,12 +42,12 @@
 					</select>
 				</div>
 				<div class="col-8 my-3">
-					<button class="btn btn-primary justify-content-center">ajouter au panier<i class="fi fi-rr-shopping-bag m-3"></i>
+					<button (click)="addToCart($event)" class="btn btn-primary justify-content-center">ajouter au panier<i class="fi fi-rr-shopping-bag m-3"></i>
 					</button>
 				</div>
 				<div class="about my-2">
 					<p>Description :
-						{{ product?.description }}</p>
+						{{ product.description }}</p>
 				</div>
 			</div>
       		</div>

@@ -3,6 +3,7 @@ import { Product } from 'src/app/models/product';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -15,10 +16,12 @@ export class ProductComponent implements OnInit, OnDestroy {
   imageMin: string | undefined;
   product: Product | undefined;
   productSubscription: Subscription | undefined;
+  isLoading: boolean = true;
 
   constructor(
     private route: ActivatedRoute,
-    private ProductService: ProductService
+    private ProductService: ProductService,
+    private cartService: CartService
   ) {
 
   }
@@ -29,10 +32,12 @@ export class ProductComponent implements OnInit, OnDestroy {
       .subscribe({
         next: (products: Product[]) => {
           this.product = products.filter(p => p.slug === this.slug)[0];
+          this.isLoading = false;
           this.imageMin = this.product.imageUrl[0];
         },
         error: (error: any) => {
           console.log("Error: ", error);
+          this.isLoading = false;
         }
       })
     // console.log(this.slug);
@@ -47,4 +52,11 @@ export class ProductComponent implements OnInit, OnDestroy {
   handleChangeImage(url: string): void {
     this.imageMin = url;
   }
+
+  addToCart(event: any): void{
+    if (this.product) {
+      this.cartService.addProduct(this.product);
+    }
+   }
 }
+

@@ -186,8 +186,8 @@
     "name": "SWEAT DRAGON BALL Z TORTUE GENIALE",
     "imageUrl": [
       "/assets/images/sweat-dsz3.webp",
-      "/assets/images/sweat-dsz3.webp",
-      "/assets/images/sweat-dsz3.webp"
+      "/assets/images/sweat-goku-chichi.webp",
+      "/assets/images/Sweat_jaune_dbz.webp"
     ],
     "category": "sweat",
     "size": ["S", "M", "L", "XL"],
@@ -200,8 +200,8 @@
     "name": "SWEAT DRAGON BALL GOKU & CHICHI",
     "imageUrl": [
       "/assets/images/sweat-goku-chichi.webp",
-      "/assets/images/sweat-goku-chichi.webp",
-      "/assets/images/sweat-goku-chichi.webp"
+      "/assets/images/Sweat_jaune_dbz.webp",
+      "/assets/images/sweat-dsz3.webp"
     ],
     "category": "sweat",
     "size": ["S", "M", "L", "XL"],
@@ -214,8 +214,8 @@
   "name": "SWEAT DRAGON BALL Z GOKU BLACK APPARITION",
   "imageUrl":[
     "/assets/images/Sweat_jaune_dbz.webp",
-    "/assets/images/Sweat_jaune_dbz.webp",
-    "/assets/images/Sweat_jaune_dbz.webp"
+    "/assets/images/sweat-goku-chichi.webp",
+    "/assets/images/sweat-dsz3.webp"
   ],
   "category": "sweat",
   "size": ["S", "M", "L", "XL"],

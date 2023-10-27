@@ -14,7 +14,7 @@ import { ListProductComponent } from './components/list-product/list-product.com
 import { ProductComponent } from './components/product/product.component';
 import { ContainerComponent } from './components/container/container.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ModalProductComponent } from './components/modal-product/modal-product.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -27,7 +27,11 @@ import { ManufacturingComponent } from './components/productInfo/manufacturing/m
 import { ProductTabsDescriptionComponent } from './components/productInfo/product-tabs-description/product-tabs-description.component';
 import { CategoryComponent } from './components/category/category.component';
 import { FormatImageUrlPipe } from './pipes/format-image-url.pipe';
-
+import { FormatPricePipe } from './pipes/format-price.pipe';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { SigninComponent } from './components/auth/signin/signin.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,6 +56,9 @@ import { FormatImageUrlPipe } from './pipes/format-image-url.pipe';
     ProductTabsDescriptionComponent,
     CategoryComponent,
     FormatImageUrlPipe,
+    FormatPricePipe,
+    SignupComponent,
+    SigninComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,8 +67,10 @@ import { FormatImageUrlPipe } from './pipes/format-image-url.pipe';
     HttpClientModule,
     RouterModule.forRoot(routes),
     TooltipModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

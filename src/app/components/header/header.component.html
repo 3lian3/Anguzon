@@ -17,10 +17,60 @@
           <a class="nav-link " (click)="navigateToCategory('accessoire')">Accessoires</a>
         </li>
       </ul>
-        <a routerLink="cart" class="cart-icon mx-5">
+
+      <li class="dropdown cart_dropdown">
+        <a  routerLink="cart" data-bs-toggle="dropdown" class="nav-link cart_trigger">
           <i class="fi fi-rs-basket-shopping-simple"></i>
-           <div class="quantite-badge" style="position: absolute; top: 0; right: 0;">5</div>
+          <div class="quantite-badge">{{cart?.quantity}}</div>
         </a>
+        <div class="cart_box dropdown-menu">
+          <ul class="cart_list">
+            <li>
+              <a href="#" class="item_remove">
+                <i class="ion-close"></i>
+              </a>
+              <a href="#">
+                <img width="50" height="50" alt="cart_thumb1" src="#">Culotte en dentelle
+              </a>
+              <span class="cart_quantity">{{cart?.quantity}} x
+                <span class="cart_amount">
+                  <span class="price_symbole">23,91&nbsp;€
+                  </span>
+                </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </li>
+
     </div>
   </div>
 </nav>
+
+        <!--<a routerLink="cart" class="cart-icon mx-5">
+          <i class="fi fi-rs-basket-shopping-simple"></i>
+           <div class="quantite-badge" style="position: absolute; top: 0; right: 0;">{{cart?.quantity}}</div>
+
+
+      <li class="dropdown cart_dropdown">
+        <a routerLink="cart" class="cart mx-5">
+          <i class="fi fi-rs-basket-shopping-simple"></i>
+          <div class="quantite-badge" style="position: absolute; top: 0; right: 0;">{{cart?.quantity}}</div>
+        </a>
+        <div class="cart_box dropdown-menu dropdown-menu-left">
+          <ul class="cart_list">
+            <li *ngFor="let article of cart?.articles">
+              <a href="#" class="item_remove">
+                <i class="ion-close"></i>
+              </a>
+              <a href="#">
+                <img width="50" height="50" alt="cart_thumb1" src="../../../assets/images/logoAnguzon.png" >{{article?.product?.name}}
+              </a>
+              <span class="cart_quantity"> {{article?.quantity}} x
+                <span class="cart_amount">
+                  <span class="price_symbole">{{cart?.total | formatPrice: article?.product}}</span>
+                </span>
+              </span>
+            </li>
+          </ul>
+        </a>-->

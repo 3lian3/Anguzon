@@ -1,9 +1,9 @@
-<a [routerLink] = "['product', product?.slug]">
+<a [routerLink] = "['/list-product/product', product?.slug]">
 <div class="container" (click)="handleClickProduct(product)" >
-  <div class="row pt-2 ">
-    <div class="col-dm-4">
-      <div class="card mb-3">
-      <div class="fex-1 ">
+  <div class=" row ">
+    <div class="col-dm-2">
+      <div class="card mb-2">
+      <div class="d-flex">
         <img [src]="product?.imageUrl | formatImageUrl " class="card-img-top" [alt]="product?.name">
       </div>
         <div class="card-body">
