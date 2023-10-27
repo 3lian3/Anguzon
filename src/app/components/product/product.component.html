@@ -1,7 +1,7 @@
 <app-loader  *ngIf="isLoading"></app-loader>
 <div *ngIf="!isLoading" class="container">
   <div class="row">
-    <div class="col flex-column align-items-start">
+    <div class="col flex-column text-end">
       <img *ngFor="let url of product?.imageUrl" [src]="url" class="imageMiniature mt-3" [alt]="product?.name" width="100px" height="100px" (click)="handleChangeImage(url)" [ngClass]="{imageMiniature: imageMin == url }">
     </div>
     <div class="col-10">
@@ -9,12 +9,12 @@
         <div class="col-6 d-flex">
           <img [src]="this.imageMin" class="my-3 " alt="{{product?.name}}" width="400px" height="400px">
         </div>
-        <div class="col-4 my-3">
+        <div class="col-6 my-3">
         <div class="my-3 test-start">
         <app-breadcrumb [breadcrumbs]="[{ label: 'Home', url: '/home' }, { label: 'Liste d\'articles', url: '/list-product' }, { label: '/Détail article', url: 'list-product/product/:slug' }]"></app-breadcrumb>
         </div>
           <h4 >{{ product?.name }}</h4>
-          <div class="m-3">
+          <div>
             <h5>Catégorie : {{product?.category}}</h5>
           </div>
           <div class="my-3 ">

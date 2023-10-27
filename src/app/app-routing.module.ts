@@ -10,6 +10,8 @@ import { ProductCompositionComponent } from './components/productInfo/product-co
 import { ManufacturingComponent } from './components/productInfo/manufacturing/manufacturing.component';
 import { ProductTabsDescriptionComponent } from './components/productInfo/product-tabs-description/product-tabs-description.component';
 import { CategoryComponent } from './components/category/category.component';
+import { SigninComponent } from './components/auth/signin/signin.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
 
 export const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },
@@ -40,6 +42,8 @@ export const routes: Routes = [
   { path: "category/:category", component: CategoryComponent, pathMatch: "full"},
   { path: "list-product/category/:category", component: ListProductComponent, pathMatch: "full"},
   { path: "list-product", component: ListProductComponent, pathMatch: "full" },
+  { path: "signin", component: SigninComponent, pathMatch: "full" },
+  { path: "signup", component: SignupComponent, pathMatch: "full"},
   { path: "product-detail", component: ProductDetailComponent, pathMatch: "full"},
   { path: "cart", component: CartComponent, pathMatch: "full" },
   { path: "**", component: NotFoundComponent}
